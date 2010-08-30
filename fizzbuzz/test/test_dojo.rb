@@ -12,19 +12,19 @@ describe Dojo do
    assert_equal 1, @dojo.fizzbuzz(1)
  end
   
- it 'dever retornar fizz se o parametro for multiplo de 3' do
+ it 'should return fizz when receive multiples of 3' do
    assert_equal 'fizz', @dojo.fizzbuzz(3)
  end 
  
- it 'dever retornar buzz se o parametro for multiplo de 5' do
+ it 'should return buzz when receive multiples of 5' do
    assert_equal 'buzz', @dojo.fizzbuzz(5)
  end 
  
- it 'dever retornar fizzbuzz se o parametro for multiplo de 3 e 5' do
+ it 'should return fizzbuzz when receive multiples of 3 and 5' do
    assert_equal 'fizzbuzz', @dojo.fizzbuzz(15)
  end  
  
- it 'deve retornar a seguinte expressao -> 1 2 fizz 4 buzz ...' do
+ it 'should return the following expression -> 1 2 fizz 4 buzz ...' do
    expected = "1 2 fizz 4 buzz fizz 7 8 fizz buzz 11 fizz 13 14 fizzbuzz"
    assert_equal expected, @dojo.sequence(15)
  end
